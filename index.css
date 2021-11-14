@@ -2,7 +2,7 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 /* body{
-    background-color: black;
+    background-color: #f48e9b;
 } */
 
 
@@ -25,7 +25,7 @@
 
 .navbar{
 
-background-color: rgb(173, 60, 173);
+background-color: #f48e9b;
 height: 15vh;
 margin-left: 150px;
 margin-right: 150px;
@@ -143,14 +143,14 @@ h1#head{
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    height:80vh;
+    height:170vh;
     width: 100vw;
 
 }
 
 .tourism div.cab{
     border-radius: 10px;
-    height: 70vh;
+    height: 80vh;
     width: 40vw;
     display: flex;
     align-items: center;
@@ -182,4 +182,116 @@ h1#head{
     width: 30vw;
     border-radius: 10px;
     /* border: 1px solid black; */
+}
+
+.tourism div.cab a{
+    text-decoration: none;
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-family: 'Noto Serif', serif;
+}
+.tourism div.cab a:hover{
+    background-color: purple;
+}
+
+.offers{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 50vh;
+    width: 100vw;
+}
+
+.offers div.cab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:50vh ;
+    width: 25vw;
+    /* border: 2px solid black;
+    color: white; */
+}
+
+.offers div.cab h1{
+    font-family: 'Noto Serif', serif;
+
+}
+.offers div.cab p{
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.offers div.offer1{
+    background: url(./images/carpool.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.offers div.offer1::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+.offers div.offer2{
+    background: url(./images/advance_cash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.offers div.offer2::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+.offers div.offer3{
+    background: url(./images/postpaid.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.offers div.offer3::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+.offers div.offer4{
+    background: url(./images/Senior-Citizen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.offers div.offer4::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
 }

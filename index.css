@@ -26,7 +26,9 @@
 .navbar{
 
 background-color: rgb(173, 60, 173);
-height: 10vh;
+height: 15vh;
+margin-left: 150px;
+margin-right: 150px;
 /* width: 80vw; */
 /* margin-top: 10px; */
 position: sticky;
@@ -49,7 +51,7 @@ top: 10px;
     display: flex;
     align-items: center;
    justify-content: center;
-   margin-top: -70px;
+   margin-top: -110px;
 
 }
 
@@ -94,6 +96,7 @@ h1#head{
     flex-direction: row;
     height: 60vh;
     width: 100vw;
+    flex-wrap: wrap;
     /* border: 2px solid blueviolet; */
 }
 
@@ -104,7 +107,7 @@ h1#head{
     width: 25vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color:sandybrown;
 }
@@ -112,6 +115,7 @@ h1#head{
 .service div.cab p{
     padding: 5px 5px;
     text-align: center;
+    font-family: 'Signika Negative', sans-serif;
 }
 .service div.cab img{
     padding: 5px 5px;
@@ -129,6 +133,53 @@ h1#head{
 .service div.cab img{
     height: 25vh;
     width: 20vw;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.tourism{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:80vh;
+    width: 100vw;
+
+}
+
+.tourism div.cab{
+    border-radius: 10px;
+    height: 70vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color:sandybrown;
+    margin: 10px 10px;
+}
+.tourism div.cab p{
+    padding: 5px 5px;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+.tourism div.cab img{
+    padding: 5px 5px;
+    text-align: center;
+}
+.tourism div.cab h1{
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.tourism div.cab h1.head{
+    font-size: 35px;
+    font-family: 'Noto Serif', serif;
+}
+.tourism div.cab img{
+    height: 35vh;
+    width: 30vw;
     border-radius: 10px;
     /* border: 1px solid black; */
 }

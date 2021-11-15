@@ -12,6 +12,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Signika+Negative&family=Yuji+Boku&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
     
@@ -35,6 +41,59 @@
 
     <div class="book">
         <p>Book<br> your<br> ride<br> now</p>
+
+        <div id="container">
+            <h4>YOUR SAFETY IS OUR PRIORITY!</h4>
+            <form class="form" id="form">
+                <div id="city_selection">
+                    <label for="city" style="margin-right: 10px;">Enter Pickup Location</label>
+                    <select id="city" placeholder="">
+                        <option value="Delhi">DELHI</option>
+                        <option value="Agra">AGRA</option>
+                        <option value="Mathura">MATHURA</option>
+                        <option value="Jaipur">JAIPUR</option>
+                        <option value="mumbai">MUMBAI</option>
+                        <option value="chandigarh">CHANDIGARH</option>
+                    </select>
+                </div>
+                <div id="city_selection">
+                    <label for="city" style="margin-right: 10px;">Enter Destination</label>
+                    <select id="city" placeholder="">
+                        <option value="Delhi">DELHI</option>
+                        <option value="Agra">AGRA</option>
+                        <option value="Mathura">MATHURA</option>
+                        <option value="Jaipur">JAIPUR</option>
+                        <option value="mumbai">MUMBAI</option>
+                        <option value="chandigarh">CHANDIGARH</option>
+                    </select>
+                </div>
+                <div class="date_selection">
+                    <div class="date">
+                        <label for="start_date">
+                            when do you need a car?
+                        </label>
+                        <input type="date" id="start_date" placeholder="">
+                    </div>
+                    <div class="date">
+                        <label for="till_date">
+                            Till when do you need it?
+                        </label>
+                        <input type="date" id="till_date" placeholder="">
+                    </div>
+                </div>
+                <div class="time_selection">
+                    <div class="time">
+                        <label for="pickup_time">Pickup Time</label>
+                        <input type="time" id="pickup_time " placeholder="">
+                    </div>
+                    <div class="time">
+                        <label for="Drop_off">Drop-off Time</label>
+                        <input type="time" id="Drop_off" placeholder="">
+                    </div>
+                </div>
+            </form>
+            <button type="submit">Search Cars</button>
+        </div>
     </div>
 
     <h1 id="head">Our Services</h1>
@@ -111,6 +170,49 @@
                 <h1>Senior Citizen Discounts</h1>
                 <p>Discounts upto 50% for Senior Citizens</p>
             </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="first">
+
+                <div class="logo">
+                    <img src="./images/mitchell-ng-liang-an-j5YwVDEC394-unsplash.jpg" alt="">
+                </div>
+                <div class="about">
+                    <h1>About Cabbro</h1>
+                    <p>Cabbro integrates city and urban transportation for customers and drivers onto a web
+                        page network platform ensuring convenient, transparent, and quick service fulfillment.
+                        It is focused on leveraging the best of technology and building innovative solutions
+                        ground-up, that will be relevant at a global scale and hence can lead to an error free,
+                        secure, reliable, and faster management system. Thus it will help everyone in better
+                        utilization of time and money.</p>
+                </div>
+                <div class="contact">
+                    <h1>Contact us</h1>
+                    <ul>
+                        <li><i class="fas fa-home"></i>GLA University</li>
+                        <li><i class="fas fa-address-card"></i>17km Stone, NH-2, Mathura-Delhi Road Mathura,
+                            s Chaumuhan, Uttar Pradesh 281406</li>
+                        <li><i class="fas fa-mobile-alt"></i> 999999999</li>
+                        <li><i class="fab fa-instagram"></i>Cabbro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="head">Follow us on Social media platforms</h1>
+            <div class="second">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="last">
+            <p>Copyright &copy; 2021 Cabbro.com</p>
         </div>
    </body>
    </html>

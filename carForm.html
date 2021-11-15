@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carForm</title>
+    <style>
+        #container {
+            box-shadow: 2px 2px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 500px;
+            height: 340px;
+            margin: 100px auto;
+            background: #f6f6f6;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            color: #DA1F32;
+        }
+
+        #city_selection {
+            text-align: center;
+            align-items: center;
+            padding-bottom: 20px;
+            display: flex;
+            padding-left: 105px;
+
+        }
+
+        .date {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+        }
+
+        .date_selection {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .time_selection {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .time {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background: none;
+            border-bottom: 2px solid black;
+        }
+
+        select {
+            display: block;
+            width: 50%;
+            ;
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background: none;
+            border-bottom: 2px solid black;
+        }
+
+        button {
+            margin-top: 25px;
+            margin-left: 180px;
+            padding: 6px 12px;
+            border-radius: 10px;
+            min-width: 130px;
+            background: #DA1F32;
+            color: #fff;
+            transition: .3s all ease;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h4>YOUR SAFETY IS OUR PRIORITY!</h4>
+        <form class="form" id="form">
+            <div id="city_selection">
+                <label for="city">Self Drive Cars for Rent in</label>
+                <select id="city" placeholder="">
+                    <option value="Delhi">DELHI</option>
+                    <option value="Agra">AGRA</option>
+                    <option value="Mathura">MATHURA</option>
+                    <option value="Jaipur">JAIPUR</option>
+                    <option value="mumbai">MUMBAI</option>
+                    <option value="chandigarh">CHANDIGARH</option>
+                </select>
+            </div>
+            <div class="date_selection">
+                <div class="date">
+                    <label for="start_date">
+                        when do you need a car?
+                    </label>
+                    <input type="date" id="start_date" placeholder="">
+                </div>
+                <div class="date">
+                    <label for="till_date">
+                        Till when do you need it?
+                    </label>
+                    <input type="date" id="till_date" placeholder="">
+                </div>
+            </div>
+            <div class="time_selection">
+                <div class="time">
+                    <label for="pickup_time">Pickup Time</label>
+                    <input type="time" id="pickup_time " placeholder="">
+                </div>
+                <div class="time">
+                    <label for="Drop_off">Drop-off Time</label>
+                    <input type="time" id="Drop_off" placeholder="">
+                </div>
+            </div>
+        </form>
+        <button type="submit">Search Cars</button>
+    </div>
+</body>
+
+</html>

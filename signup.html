@@ -56,12 +56,12 @@
             <div class="form-item sign-up">
               <div class="table">
                 <div class="table-cell">
-                  <input name="email" placeholder="Email" type="text" id = "email" />
-                  <input name="fullName" placeholder="Full Name" type="text" id = "Fullname"/>
+                  <input name="email" placeholder="Mobile Number" type="text" id = "email" />
+                  <!-- <input name="fullName" placeholder="Full Name" type="text" id = "Fullname"/> -->
                   <input name="Username" placeholder="Username" type="text"  id = "Username"/>
                   <input name="Password" placeholder="Password" type="Password" id = "Password"/>
                   <input name="Password" placeholder="Confirm Password" type="Password" id = "Password1"/>
-                  <button class="btn" onclick="signup()">
+                  <button class="btn" id="submit" onclick="signup()">
                     Sign up
                   </button>
                 </div>
@@ -74,6 +74,11 @@
         <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
       
           <script src="form.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+          <script src="./firebaseConfig.js"></script>
+          
+          <script src="./info.js"></script>  
     
 </body>
 </html>

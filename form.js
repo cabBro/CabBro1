@@ -8,7 +8,7 @@ $(".info-item .btn").click(function(){
 
 function login()
 	{
-		var uname = document.getElementById("Username1").value;
+		var uname = document.getElementById("username2").value;
 		var pwd = document.getElementById("Password2").value;
 		if(uname =='')
 		{
@@ -18,9 +18,9 @@ function login()
 		{
         	alert("enter the password");
 		}
-		else if(uname.length < 3)
+		else if(uname.length < 10  || uname.length > 10)
 		{
-			alert("Atleast 3 characters required!!");
+			alert("Mobile Number should be of 10 digit");
 		}
 		else if(pwd.length < 6 )
 		{

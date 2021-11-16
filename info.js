@@ -17,7 +17,7 @@ document.getElementById("submit").onclick = function() {
       .database()
       .ref("Sign-in " + emailV)
       .set({
-        Email: emailV,
+        Mobile : emailV,
         // fullname: FullNameV,
         username: userV,
         password: passV,
@@ -34,3 +34,4 @@ document.getElementById("submit").onclick = function() {
     document.getElementById("Password").value = "";
     document.getElementById("Password1").value = "";
   };
+

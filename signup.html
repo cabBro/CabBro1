@@ -1,79 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-    
-    <title>Login System</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel = "stylesheet" href = "login.css">
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use-->
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+  <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDHokx42Newa9ock3-xNJ1Kh5iVHihPlGk",
+        authDomain: "signup-9c7d8.firebaseapp.com",
+        databaseURL: "https://signup-9c7d8-default-rtdb.firebaseio.com",
+        projectId: "signup-9c7d8",
+        storageBucket: "signup-9c7d8.appspot.com",
+        messagingSenderId: "401554631609",
+        appId: "1:401554631609:web:11c3b3e5591db180f76468",
+        measurementId: "G-4ZBYDJZQNQ"
+    };
+
+      firebase.initializeApp(firebaseConfig);
+  </script>
+  
 </head>
 <body>
-    <div class="container">
-        <div class="box"></div>
-        <div class="container-forms">
-          <div class="container-info">
-            <div class="info-item">
-              <div class="table">
-                <div class="table-cell">
-                  <p>
-                    Have an account?
-                  </p>
-                  <div class="btn">
-                    Log in
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="table">
-                <div class="table-cell">
-                  <p>
-                    Don't have an account? 
-                  </p>
-                  <div class="btn">
-                    Sign up
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container-form">
-            <div class="form-item log-in">
-              <div class="table">
-                <div class="table-cell">
-                  <input name="Username" placeholder="Username" type="text" id = "Username1" />
-                  <input name="Password" placeholder="Password" type="Password" id = "Password2"/>
-                  <div class="btn" onclick="login()">
-                    Log in
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-item sign-up">
-              <div class="table">
-                <div class="table-cell">
-                  <input name="email" placeholder="Email" type="text" id = "email" />
-                  <input name="fullName" placeholder="Full Name" type="text" id = "Fullname"/>
-                  <input name="Username" placeholder="Username" type="text"  id = "Username"/>
-                  <input name="Password" placeholder="Password" type="Password" id = "Password"/>
-                  <input name="Password" placeholder="Confirm Password" type="Password" id = "Password1"/>
-                  <button class="btn" onclick="signup()">
-                    Sign up
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-      
-          <script src="form.js"></script>
-    
+  
+
+<div class="forms-out">
+  <div class="forms-in">
+    <div id="registration-page" class="hide">
+      <button id="show-login">Sign In</button>
+      <h3>Sign Up</h3>
+      Email <br />
+      <input type="email" id="registration-email" /><br />
+      Confirm Email <br />
+      <input
+      type="email"
+      id="registration-reemail"
+      autocomplete="disable"
+      /><br />
+      Password <br />
+      <input type="password" id="registration-password" /><br />
+      <center><button id="register">Sign Up</button></center>
+    </div>
+
+    <div id="login-page">
+      <button id="show-register">Sign Up</button>
+      <h3>Sign In</h3>
+      Email <br />
+      <input type="email" id="login-email" /><br />
+      Password <br />
+      <input type="password" id="login-password" /><br />
+      <p id="forgot-password">Forgot Password</p>
+      <center><button id="login">Sign In</button></center>
+    </div>
+
+    <div id="homepage" class="hide">
+      <button id="signout">Sign Out</button>
+
+      <h3>Logged In</h3>
+    </div>
+  </div>
+</div>
+<script src = "form.js"></script>
 </body>
 </html>

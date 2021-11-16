@@ -6,15 +6,25 @@
   margin: 0 -16px;
 }
 
+.col-501 h3 {
+  font-family: 'Noto Serif', serif;
+}
 .col-501 {
   padding: 0 16px;
   float: left;
+  margin: 5px 15px;
+  /* border: 2px solid black; */
+  width: 30vw;
+}
+
+label,input{
+  font-family: 'Signika Negative', sans-serif;
 }
 
 .col-25,
 .col-50,
 .col-75 {
-  padding: 0 16px;
+  padding: 0px 25px;
 }
 
 .container {
@@ -22,6 +32,11 @@
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
+  height: 90vh;
+  /* width: 50vw; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 input[type="text"] {
@@ -44,7 +59,7 @@ label {
 }
 
 .btn {
-  background-color: #04aa6d;
+  background-color: chocolate;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -56,13 +71,14 @@ label {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: tomato;
 }
 
 span.price {
   float: right;
   color: grey;
 }
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {

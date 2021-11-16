@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contact{
+            position: relative;
+            height: 100vh;
+            padding: 50px, 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(./images/contact.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .content{
+            width: 800px;
+            text-align: center;
+        }
+
+        .content h2{
+            font-size: 36px;
+            font-weight: 700;
+            color: rgb(32, 6, 6);
+        }
+
+        .content p{
+            font-weight: 400;
+            color: rgb(24, 23, 85);
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .icon{
+            width: 60px;
+            height: 60px;
+            background: rgb(228, 171, 87);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .icon:hover{
+            background-color: tomato;
+            color: white;
+        }
+
+        .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 18px;
+            color: white;
+            flex-direction: column;
+            font-weight: 300;
+        }
+
+        .text h1{
+            font-weight: 500;
+            color: rgb(206, 200, 221);
+        }
+
+        .contactForm{
+            width: 40%;
+            padding: 40px;
+            background: white;
+
+        }
+
+        .contactForm h2{
+            font-size: 30px;
+            color: rgb(226, 26, 226);
+        }
+
+        .inputBox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .inputBox input, .inputBox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            resize: none;
+        }
+
+        span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .inputBox input:focus ~ span ,
+        .inputBox input:valid ~ span ,
+        .inputBox textarea:focus ~ span ,
+        .inputBox textarea:valid ~ span{
+            color: chocolate;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        input[type="submit"]{
+            width: 100px;
+            background-color: darkgoldenrod;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Get in touch if your question has not been answered or you face some problems</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h1>Address</h1>
+                        <p>GLA University 17km Stone, NH-2, Mathura-Delhi Road Mathura </p>
+                        <p>Chaumuhan, Uttar Pradesh 281406</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h1>Phone</h1>
+                        <p>507-406-7088</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h1>Email</h1>
+                        <p>mukulagarawal173@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form >
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea rows="5" required></textarea>
+                        <span>Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

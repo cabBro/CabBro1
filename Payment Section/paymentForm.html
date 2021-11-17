@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./paymentForm.css" />
     <title>payment page</title>
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+        crossorigin="anonymous"
+      />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Signika+Negative&family=Yuji+Boku&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <div class="container">
       <form>
         <div class="rowContent">
           <div class="col-501">
-            <h3>User Address</h3>
+            <h3>User Details</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Name" />
             <label for="phone"><i class="fa fa-envelope"></i> Phone</label>
@@ -20,7 +30,7 @@
               type="text"
               id="phone"
               name="phone"
-              placeholder="9999999999"
+              placeholder="999-999-999"
             />
             <label for="adr"
               ><i class="fa fa-address-card-o"></i> Address</label
@@ -29,10 +39,10 @@
               type="text"
               id="adr"
               name="address"
-              placeholder="542 W. 15th Street"
+              placeholder="GLA University Mathura"
             />
             <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="India" />
+            <input type="text" id="city" name="city" placeholder="Mathura" />
 
             <div class="row">
               <div class="col-50">
@@ -74,7 +84,7 @@
               type="text"
               id="expmonth"
               name="expmonth"
-              placeholder="November"
+              placeholder="month"
             />
 
             <div class="row">
@@ -84,12 +94,12 @@
                   type="text"
                   id="expyear"
                   name="expyear"
-                  placeholder="2021"
+                  placeholder="year"
                 />
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="107" />
+                <input type="text" id="cvv" name="cvv" placeholder="xyz" />
               </div>
             </div>
           </div>
@@ -97,7 +107,7 @@
         <label>
           <input type="checkbox" checked="checked" name="sameadr" /> Statement
         </label>
-        <input type="submit" value="Pay Now" class="btn" />
+        <input type="submit" value="Pay Now" class="btn" style="width: 20vw; margin-left: 35px;" />
       </form>
     </div>
   </body>
